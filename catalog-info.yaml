@@ -1,0 +1,22 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: "demo1-cq-consumer2"
+  description: "Demo1"
+  tags:
+    - java
+  links:
+    - url: https://devspaces.apps.cluster-x56f8.x56f8.sandbox2954.opentlc.com/?storageType=per-workspace#https://github.com/llowinge/demo1-demo1-cq-consumer2-service
+      title: OpenShift Dev Spaces
+      icon: web
+    - url: https://hawtio-online-hawtio-operator.apps.cluster-x56f8.x56f8.sandbox2954.opentlc.com/online/discover?namespace=system=demo1
+      title: HawtIO
+      icon: web
+spec:
+  type: service
+  lifecycle: experimental
+  owner: "group:default/backstage-admins"
+  system: system:default/demo1
+  consumesApis:
+
+    - demo1-openapi
